@@ -11,6 +11,7 @@ def limerick():
     for line in lim_list:
         print(line)
 
+
 def fizzbuzz():
     for i in range(1, 101):
         if not i % 3 and not i % 5:
@@ -25,8 +26,8 @@ def fizzbuzz():
 
 if __name__ == '__main__':
     while True:
-        limerick()
-        fizzbuzz()
+        name = input('Give me your name: ')
+        twofer(name)
         shall_continue = input('Print again?')
         if shall_continue.lower() != 'y':
             break
